@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f8f5f0" />
+  <meta name="description" content="Listen to Monika Nirala, a singer-songwriter and Hindustani classical vocalist performing ghazal, Bollywood, folk and Western music." />
+  <title>Monika Nirala — Singer-Songwriter & Hindustani Classical Vocalist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Monika Nirala home">MN<span>.</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#expertise">Vocal style</a><a href="#performances">Music</a><a href="#achievements">Recognition</a><a href="#teaching">Teaching</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#performances">Listen to music <span>↗</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-rule"></span><span data-field="eyebrow">Hindustani classical vocalist · music educator</span></p>
+        <h1 data-field="heroTitle">A classical foundation,<br />a voice of her own.</h1>
+        <p class="hero-name" data-field="name">Monika Nirala</p>
+        <p class="hero-intro" data-field="intro">A trained vocalist with a deep foundation in Hindustani classical music, a versatile repertoire, and a passion for sharing the beauty of music through performance and teaching.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#performances">Listen to my music <span>↗</span></a><a class="text-link" href="#contact">Book a performance <span>↗</span></a></div>
+        <p class="genre-line" data-field="genres">Ghazal <i>·</i> Hindustani classical <i>·</i> Bollywood <i>·</i> Folk <i>·</i> Western vocal</p><p class="artist-quote" data-field="quote">“Music is not just what I do, it’s who I am.”</p>
+      </div>
+      <div class="hero-art" aria-label="Artist portrait area">
+        <div class="portrait-frame" id="portraitFrame"><div class="portrait-placeholder"><span class="portrait-monogram">MN</span><span class="portrait-caption">A voice in every shade</span></div></div>
+        <span class="hero-seal">MUMBAI<br /><b>INDIA</b></span>
+        <span class="hero-side-note">CLASSICAL · CONTEMPORARY</span>
+      </div>
+      <div class="hero-index"><span>01 / 06</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <section class="string-interlude" aria-label="Interactive string notes"><div class="string-heading"><p class="eyebrow">A little musical interlude</p><span>Tap a string to play a note</span><button id="depthToggle" class="sound-toggle" type="button" aria-pressed="true">◈ Depth on</button><button id="soundToggle" class="sound-toggle" type="button" aria-pressed="true">♫ Sound on</button></div><div class="string-board" id="stringBoard"><div class="fret-lines" aria-hidden="true"></div><button class="guitar-string" data-note="82.41" aria-label="Play low E note"><span>E</span></button><button class="guitar-string" data-note="110" aria-label="Play A note"><span>A</span></button><button class="guitar-string" data-note="146.83" aria-label="Play D note"><span>D</span></button><button class="guitar-string" data-note="196" aria-label="Play G note"><span>G</span></button><button class="guitar-string" data-note="246.94" aria-label="Play B note"><span>B</span></button><button class="guitar-string" data-note="329.63" aria-label="Play high E note"><span>E</span></button></div></section>
+
+    <section class="about section-wrap section-pad" id="about">
+      <div class="section-heading"><p class="eyebrow">A little about me</p><h2 data-field="aboutTitle">An artist rooted<br />in tradition.</h2></div>
+      <div class="about-body"><p class="lead" data-field="bio">A dedicated music professional with a strong foundation in Indian classical music and a desire to share its beauty through teaching. With six to seven years of formal Hindustani classical training, I bring care, curiosity and a student-focused approach to every musical setting.</p><p class="body-copy" data-field="bioMore">My journey spans university and national-level competitions, stage performances across genres, and a growing interest in helping learners of every age find their own musical expression.</p><a class="text-link" href="#teaching">Discover my approach <span>↗</span></a></div>
+      <div class="education-summary" id="educationSummary"></div>
+    </section>
+
+    <section class="expertise section-pad" id="expertise"><div class="section-wrap"><div class="section-heading heading-row"><div><p class="eyebrow">The musical language</p><h2 data-field="expertiseTitle">A versatile vocal practice.</h2></div><p class="heading-aside" data-field="expertiseIntro">Classical training.<br />A voice across genres.</p></div><div class="expertise-list" id="skillsList"></div><div class="repertoire-block"><div><p class="eyebrow">A few songs in the repertoire</p><p class="repertoire-note" data-field="repNote">A small selection across styles. Ask about a song or style you have in mind.</p></div><div id="repertoireList" class="repertoire-list"></div></div></div></section>
+
+    <section class="performances section-wrap section-pad" id="performances"><div class="section-heading heading-row"><div><p class="eyebrow">The voice, in its many moods</p><h2 data-field="performanceTitle">Listen to the music.</h2></div><p class="heading-aside" data-field="performanceIntro">Ghazal, classical, Bollywood and more. Listen to selected recordings or watch live performances.</p></div><div class="performance-grid" id="performanceGrid"></div><div class="platform-links" id="platformLinks"></div><p class="music-note">Choose a performance to listen or watch. Links open from the artist’s music channels.</p></section>
+
+    <section class="featured-song" id="featuredSong"><div class="song-ornament" aria-hidden="true">S.</div><div class="song-copy"><p class="eyebrow">An original musical project</p><h2 data-field="songTitle">“Saanware”</h2><p data-field="songDescription">An original song written, composed and sung by Monika Nirala, featuring her as the lead artist in the official music video.</p><a id="songLink" class="button button-light" href="#">Listen / watch “Saanware” <span>↗</span></a></div><div class="song-meta"><span>06</span><span>ORIGINAL SONG<br />WRITING · COMPOSITION · VOCALS</span></div></section>
+
+    <section class="spotlight-section section-wrap section-pad" id="spotlightSection" hidden><div class="section-heading heading-row"><div><p class="eyebrow">From the artist’s studio</p><h2>In the spotlight.</h2></div><p class="heading-aside">New music, performances and moments worth sharing.</p></div><div class="spotlight-grid" id="spotlightGrid"></div></section>
+
+    <section class="gallery-section section-wrap section-pad" id="gallerySection" hidden><div class="section-heading heading-row"><div><p class="eyebrow">On stage · in the studio · along the way</p><h2>A little scrapbook.</h2></div><p class="heading-aside">Moments from Monika’s musical world.</p></div><div class="gallery-grid" id="galleryGrid"></div></section>
+
+    <section class="reels-section section-wrap section-pad" id="reelsSection" hidden><div class="section-heading heading-row"><div><p class="eyebrow">Little glimpses of the music</p><h2>Reels & short clips.</h2></div><p class="heading-aside">Short performances and behind-the-scenes moments.</p></div><div class="reels-grid" id="reelsGrid"></div></section>
+
+    <section class="shows-section section-pad" id="showsSection" hidden><div class="section-wrap"><div class="section-heading heading-row"><div><p class="eyebrow">Come hear a song live</p><h2>Upcoming shows.</h2></div><p class="heading-aside">Dates and event details are added here when confirmed.</p></div><div class="show-list" id="showList"></div></div></section>
+
+    <section class="achievements section-pad" id="achievements"><div class="section-wrap"><div class="section-heading heading-row"><div><p class="eyebrow">A few proud moments</p><h2 data-field="achievementTitle">Milestones in music.</h2></div><p class="heading-aside">Recognition earned through collaboration, discipline and a love of performance.</p></div><div class="achievement-list" id="achievementList"></div></div></section>
+
+    <section class="teaching section-wrap section-pad" id="teaching"><div class="teaching-top"><div class="section-heading"><p class="eyebrow">Music for every voice</p><h2 data-field="teachingTitle">Helping every voice<br />find its expression.</h2></div><div class="teaching-intro"><p class="lead" data-field="teachingIntro">Music becomes more joyful when every student feels encouraged to explore. My approach is patient, personal and grounded in the fundamentals of vocal music.</p><p class="body-copy" data-field="teachingMore">Lessons can be shaped around individual goals, from a first introduction to classical music to refining voice culture and preparing for performance.</p></div></div><div class="teaching-bottom"><div><p class="eyebrow">A learning path that fits you</p><div id="lessonList" class="lesson-list"></div></div><div class="teaching-note"><span class="note-mark">“</span><p data-field="teachingQuote">A supportive space to listen closely, practise with confidence, and let your voice grow.</p><a class="button button-dark" href="#contact">Enquire about music lessons <span>↗</span></a></div></div></section>
+
+    <section class="services-section section-wrap section-pad" id="services"><div class="section-heading heading-row"><div><p class="eyebrow">For the next musical chapter</p><h2>Ways to work together.</h2></div><p class="heading-aside">For stages, studios, collaborations and students.</p></div><div class="service-grid" id="serviceGrid"></div></section>
+
+    <section class="education section-pad" id="education"><div class="section-wrap education-layout"><div class="section-heading"><p class="eyebrow">Learning, over the years</p><h2 data-field="educationTitle">Education &<br />training.</h2><p class="education-note" data-field="trainingNote">Six to seven years of formal Hindustani classical vocal training.</p></div><div id="educationList" class="education-list"></div></div></section>
+
+    <section class="contact section-wrap section-pad" id="contact"><div class="contact-top"><div class="section-heading"><p class="eyebrow">The next note starts here</p><h2 data-field="contactTitle">Let’s make music<br />together.</h2></div><p class="lead" data-field="contactIntro">For music teaching opportunities, live performances, collaborations and professional enquiries, I would love to connect.</p></div><div class="contact-content"><div class="contact-details" id="contactDetails"></div><form class="contact-form" id="contactForm"><p class="eyebrow">Send an enquiry</p><label>Your name<input name="name" required autocomplete="name" placeholder="Name" /></label><label>Email address<input name="email" type="email" required autocomplete="email" placeholder="you@example.com" /></label><label>What are you looking for?<select name="type" required><option value="">Choose an enquiry</option><option>Music lessons</option><option>Live performance</option><option>Collaboration</option><option>Other</option></select></label><label>Your message<textarea name="message" required rows="3" placeholder="Tell me a little about it…"></textarea></label><button class="button button-dark" type="submit">Prepare email <span>↗</span></button><p class="form-note">This opens your email app with your message ready to send.</p><p class="form-status" aria-live="polite"></p></form></div></section>
+  </main>
+  <footer class="site-footer"><div class="footer-main"><a class="wordmark" href="#home">MN<span>.</span></a><div><p class="footer-name" data-field="name">Monika Nirala</p><p class="footer-role" data-field="role">Hindustani classical vocalist & music educator</p></div><p class="footer-signoff" data-field="signoff">Rooted in tradition.<br />Expressed through music.</p><div class="footer-links" id="footerLinks"></div></div><div class="footer-bottom"><span>© <span id="year"></span> Monika Nirala</span><button id="sharePortfolio" class="footer-share" type="button">↗ Share portfolio</button><span>Made with music in Mumbai</span></div></footer>
+
+  <button class="edit-launch" id="editLaunch" aria-label="Open website editor"><span>✎</span> Edit website</button>
+  <div class="editor-backdrop" id="editorBackdrop"></div>
+  <aside class="editor-panel" id="editorPanel" aria-label="Website editor" aria-hidden="true">
+    <div class="editor-header"><div><p class="eyebrow">Your portfolio</p><h2>Portfolio studio</h2></div><div class="editor-head-actions"><button id="previewSite" class="editor-action">Preview as visitor</button><button id="closeEditor" class="icon-button" aria-label="Close editor">×</button></div></div>
+    <p class="editor-explainer">Edit any text right on the page, or manage the lists below. Your changes save automatically in this browser.</p>
+    <div class="editor-actions"><button id="uploadPortrait" class="editor-action">Add / change portrait</button><input id="portraitInput" type="file" accept="image/*" hidden /><button id="removePortrait" class="editor-action editor-action-muted">Remove portrait</button></div>
+    <div class="editor-tabs" role="tablist"><button class="editor-tab active" data-tab="content">Content</button><button class="editor-tab" data-tab="lists">Add / delete</button><button class="editor-tab" data-tab="settings">Settings</button></div>
+    <div class="editor-content" id="editorContent"></div>
+    <div class="editor-footer"><span id="saveStatus">Saved in this browser</span><button class="reset-link" id="resetSite">Restore original content</button></div>
+  </aside>
+  <div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-label="Performance video" aria-hidden="true"><button class="modal-close" id="modalClose" aria-label="Close video">×</button><div class="video-modal-inner" id="videoModalInner"></div></div>
+  <script src="app.js"></script>
+</body>
+</html>

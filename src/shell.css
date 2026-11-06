@@ -1,0 +1,5 @@
+.app-loading,.app-error{min-height:100vh;display:grid;align-content:center;justify-items:center;gap:.75rem;padding:2rem;background:#10091c;color:#f8f2ec;font-family:Georgia,serif;text-align:center}
+.app-loading p,.app-error p{font:500 .9rem/1.6 system-ui,sans-serif;opacity:.8}
+.loading-mark{color:#a8bfa8;font-size:3rem;animation:loadingPulse 1.7s ease-in-out infinite}
+@keyframes loadingPulse{50%{opacity:.45;transform:translateY(-3px)}}
+@media(prefers-reduced-motion:reduce){.loading-mark{animation:none}}
